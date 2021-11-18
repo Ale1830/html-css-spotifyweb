@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+/* footer !!!!!!!!!!!!!!!!!!!!!!!!! */
+footer{
+    height: 90px;
+    background-color: #282828;
+}
+/* ___________------------____________--------*/
+
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+main{
+    height: calc(100%-90px);
+    overflow: auto;
+}
+
+.main-nav{
+    float: left;
+    width: 50px;
+    height: 100%;
+}
+
+.nav-top{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 526px;
+}
+
+.nav-top img{
+    width: 60%;
+}
+
+
+
+.nav-logo-mobile{
+    width: 70%;
+}
+
+
+
+.nav-bottom{
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .nav-bottom ul li{
+      list-style-type: none;
+  }
+
+  .download{
+      width: 20px;
+  }
+
+  .profile{
+      height:27px;
+      width:27px;
+      background-color: grey;
+      border-radius: 50%;
+  }
+
+  /* destra */
+
+  .main-menu{
+    width:calc(100%-50px);
+    height: 100%;
+    background-color: #142022;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .menu-banner{
+    min-width: 370px;
+    height: 90px;
+    background-color:rgb(48, 44, 44); 
+    position: relative;
+    overflow: hidden;
+  }
+
+  .banner{
+      position: absolute;
+      right: 0;
+      top: 32px;
+  }
+
+  .main-menu .banner a{
+    color: white;  
+    height: 30px;  
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    text-decoration: none; 
+  }
+
+  .menu-content{
+      margin: 10px 15px;
+  }
+
+  .nav-content{
+      text-align: center;
+  }
+
+  .nav-content ul li{
+      display: inline-block;
+      text-align: center;
+      list-style: none;
+      padding: 2px;
+
+  }
+
+  .nav-content ul li a{
+      color: gray;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 14px;
+      text-align: center;
+  }
+
+  .content{
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .maincontent h3{
+    color: white;
+    font-size: 21px;
+    margin: 20px 10px 10px 10px;
+    display: block;
+}
+.maincontent span{
+    color: white;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    display: block;
+    opacity: .4;
+}
+
+.maincontent .album img, .albumtitle, .albumsub{
+    min-width: 150px;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.albumtitle{
+    font-size: 14px;
+}
+.albumsub{
+    font-size: 10px;
+    opacity: .4;
+}
+.album{
+    min-width: 150px;
+    max-width: 200px;
+    text-align: center;
+    width: 45%;
+    margin: 5px;
+}
+.mainrow{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.roundalbum img{
+    border-radius: 50%;
+}
+
+.album-cover{
+    position: relative;
+    height: fit-content;
+}
+.album-overlay{
+    position: absolute;
+    width: 100%;
+    height: 98%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+}
+.roundalbum .album-cover .album-overlay{
+    position: absolute;
+    width: 100%;
+    height: 98%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    border-radius: 50%;
+}
+
+.album-overlay a{
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);;
+}
+
+.album-overlay a i{
+    font-size: 60px;
+    color: white;
+}
+
+.album:hover .album-overlay{
+    display: block;
+}
+
+  /* .banner{
+    height: 20px;  
+    padding: 10px;
+    border-color: white;
+    border-radius: 20px;  
+  } */
+
+/* display none */
+.names{
+    display: none;
+}
+
+.nav-logo{
+    display: none;
+}
+/* /display none/  */
+
+
+
