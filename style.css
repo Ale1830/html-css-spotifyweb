@@ -12,12 +12,8 @@ body{
     background-color: black;
 }
 
-/* footer !!!!!!!!!!!!!!!!!!!!!!!!! */
-footer{
-    height: 90px;
-    background-color: #282828;
-}
-/* ___________------------____________--------*/
+
+
 
 .clearfix::after{
     content: '';
@@ -26,7 +22,7 @@ footer{
 }
 
 main{
-    height: calc(100%-90px);
+    height: 90%;
     overflow: auto;
 }
 
@@ -225,6 +221,101 @@ main{
 .album:hover .album-overlay{
     display: block;
 }
+
+/* footer !!!!!!!!!!!!!!!!!!!!!!!!! */
+footer{
+    height: 100px;
+    width: 100%;
+    background-color: #282828;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.footer-left{
+    min-width: 150px;
+    max-width: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+}
+
+.footer-album{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-cover{
+    width: 40px;
+    height:40px;
+    margin: 15px;
+
+}
+.footer-cover img{
+    width: 100%;
+    height: 100%;
+}
+
+.album-footer {
+  height: 40px;
+  color: #fff;
+}
+
+.albumtitle-footer{
+   font-size: 12px;
+}
+
+.subtitles-footer{
+    font-size: 11px;
+    opacity: .4;
+}
+
+.prefer{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 12px;
+    opacity: .4;
+
+}
+
+ .prefer i:hover{
+    opacity: 1.4;;
+}
+
+.footer-center{
+    display: flex;
+    justify-content:space-around;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+.center-up{
+  display: flex;
+}
+
+.center-down{
+   display: flex;
+}
+
+.footer-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
 
   /* .banner{
     height: 20px;  
